@@ -1,0 +1,29 @@
+<nav>
+    <button (click)="getStocks()">All Stocks</button>
+    <button (click)="getStocksByPrice()">Top 5 Stocks by Price</button>
+    <button (click)="getStocksByVolume()">Top 5 Stocks by Volume</button>
+    <button (click)="getStocksByPriceChange()">Top 5 Stocks by Price Change</button>
+</nav>
+
+<table border="2" class="library">
+    <thead>
+        <tr>
+            <th>Current Volume</th>
+            <th>Last Price</th>
+            <th>Market</th>
+            <th>Price Change</th>
+            <th>Symbol</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let stock of stocks">
+        <td>{{stock.current}}</td>
+        <td>{{stock.last}}</td>
+        <td>{{stock.market}}</td>
+        <td>{{stock.price}}</td>
+        <td>{{stock.symbol}}</td>
+    </tr>
+    </tbody>
+
+</table>
+

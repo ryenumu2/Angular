@@ -1,0 +1,15 @@
+<table border="2" class="library">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of books">
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+    </tr>
+    </tbody>
+</table>
+<div id="nobooks" *ngIf="!books.length">There are no books available</div>

@@ -1,0 +1,11 @@
+tr:nth-child(even){background-color: #f2f2f2;}
+
+thead {
+    background-color: #33488f62;
+    color: white;
+}
+
+.library {
+    margin-left: auto;
+    margin-right: auto;
+}
