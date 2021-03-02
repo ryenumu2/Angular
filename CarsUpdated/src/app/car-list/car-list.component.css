@@ -1,0 +1,46 @@
+button {
+    line-height: 1.5em;
+}
+
+table {
+    color: #333;
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    height: 2em;
+}
+
+th {
+    background: #DFDFDF;
+    /* Darken header a bit */
+    font-weight: bold;
+}
+
+td {
+    background: #FAFAFA;
+}
+
+/* color every other row differently */
+
+tbody tr:nth-child(even) td {
+    background: #F2F2F2;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav, button {
+    margin: 2px;
+}
+
+.numeric-data {
+    text-align: right;
+}

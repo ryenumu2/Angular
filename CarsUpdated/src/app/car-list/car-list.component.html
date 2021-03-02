@@ -1,0 +1,24 @@
+<nav>
+    <button (click)="getCars()">All cars</button>
+    <button (click)="getCarsByPrice()">Top 3 cars by price</button>
+</nav>
+<table>
+    <thead>
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Doors</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of cars">
+            <td>{{car.make}}</td>
+            <td>{{car.model}}</td>
+            <td class="numeric-data">{{car.year}}</td>
+            <td class="numeric-data">{{car.doors}}</td>
+            <td class="numeric-data">{{car.price | currency:'USD'}}</td>
+        </tr>
+    </tbody>
+</table>
